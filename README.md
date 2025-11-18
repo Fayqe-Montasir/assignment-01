@@ -24,9 +24,8 @@ Type Example
 interface User {
   name: string;
   age: number;
-}```
-
-```ts
+}
+ts
 type User = {
   name: string;
   age: number;
