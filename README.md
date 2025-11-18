@@ -1,4 +1,4 @@
-### 1.Differences Between Interfaces and Types in TypeScript
+### 1.What are some differences between interfaces and types in TypeScript?
 
 Interfaces are mainly used to describe the structure of objects in a clean, object-oriented style.
 Types are more flexible; they can describe objects, unions, primitives, and even complex type combinations.
@@ -27,13 +27,13 @@ Use types when you need flexibility like unions, intersections, or transforming 
 
 Examples
 Interface Example
+Type Example
 ```ts
 interface User {
   name: string;
   age: number;
 }```
 
-Type Example
 ```ts
 type User = {
   name: string;
@@ -50,5 +50,8 @@ Types are powerful, flexible, and ideal for advanced type manipulation.
 
 Understanding both helps you write professional, scalable, and maintainable TypeScript code.
 
+
 ### 2. What is the use of the keyof keyword in TypeScript? Provide an example.
 Ans:- keyof creates a union type of all keys from an object type. It helps with type-safe property access. It is commonly used with generics for reusable and safe utility functions.
+
+
