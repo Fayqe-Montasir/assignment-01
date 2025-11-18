@@ -11,10 +11,6 @@ function formatValue(value : string | number | boolean ) : string | number | boo
     }
 }
 
-console.log(formatValue('hello'));
-console.log(formatValue(5));
-console.log(formatValue(true));
-
 
 function getLength(value : string | any[] ) : number { 
     if(typeof value === "string"){
@@ -27,5 +23,24 @@ function getLength(value : string | any[] ) : number {
     }
 }
 
-console.log(getLength('typescript'));
-console.log(getLength([10, 20, 30, 40]));
+
+class Person {
+    name : string;
+    age : number;
+
+    constructor(name: string, age: number) {
+        this.name = name;
+        this.age = age;
+    }
+     getDetails() {
+        return `'Name: ${this.name}, Age: ${this.age}'`;
+    }
+
+}
+
+
+const filterByRating = (data: { title: string, rating: number }[]) => {
+    return data.filter((item) => item.rating >= 4);
+}
+
+
